@@ -5,9 +5,11 @@ import { PrismaModule } from './prisma/prisma.module';
 import { GraphQLModule } from '@nestjs/graphql';
 
 import { UsersModule } from './users/users.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
     imports: [
+        ConfigModule,
         PrismaModule,
         GraphQLModule.forRoot<ApolloDriverConfig>({
             driver: ApolloDriver,
