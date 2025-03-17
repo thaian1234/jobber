@@ -8,6 +8,7 @@ import { UsersModule } from '../users/users.module';
 @Module({
     providers: [AuthResolver, AuthService],
     imports: [
+        ConfigModule,
         JwtModule.registerAsync({
             imports: [ConfigModule],
             inject: [ConfigService],
