@@ -4,8 +4,6 @@
     "license": "MIT",
     "scripts": {
         "prepare": "husky",
-        "generate-ts-proto:win": "protoc --plugin=protoc-gen-ts_proto=\".\\node_modules\\.bin\\protoc-gen-ts_proto.cmd\" --ts_proto_out=./types ./proto/*.proto --ts_proto_opt=nestJs=true",
-        "generate-ts-proto:unix": "protoc --plugin=protoc-gen-ts_proto=./node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=./types ./proto/*.proto --ts_proto_opt=nestJs=true",
         "generate-ts-proto": "node scripts/generate-proto.js"
     },
     "nx": {
