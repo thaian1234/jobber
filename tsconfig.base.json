@@ -15,6 +15,7 @@
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
         "paths": {
+            "@jobber/kafka": ["libs/kafka/src/index.ts"],
             "@jobber/nestjs": ["libs/nestjs/src/index.ts"]
         }
     },
